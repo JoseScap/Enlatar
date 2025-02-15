@@ -39,7 +39,7 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ url }) => {
   const getBreadcrumbsTitle = () => {
     const routeArray = url.split("/")
     const route = routeArray[routeArray.length - 1]
-    const title = routesDictionary[route]
+    const title = routesDictionary[route] ?? route
     return title[0].toUpperCase() + title.slice(1)
   }
 

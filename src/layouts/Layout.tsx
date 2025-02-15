@@ -4,7 +4,7 @@ import { Sidebar } from "@/components";
 import { useState } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs/Breadcrumbs";
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
-import { Dashboard } from "@/pages";
+import { Dashboard, Alerts } from "@/pages";
 
 const Layout = () => {
   const location = useLocation();
@@ -25,6 +25,8 @@ const Layout = () => {
             <Route path="/" element={<Navigate to="/auth/dashboard" replace />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/profile" element={<>Hola desde el perfil</>} />
+            <Route path="/ui-elements" element={<Navigate to="/auth/ui-elements/alerts" replace />} />
+            <Route path="/ui-elements/alerts" element={<Alerts />} />
           </Routes>
         </main>
       </div>

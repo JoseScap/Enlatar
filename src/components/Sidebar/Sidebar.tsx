@@ -36,7 +36,7 @@ const Sidebar: React.FC<SidebarProps> = (props) => {
         <Links
           header='Panel'
           isHeader
-          link="/auth/panel"
+          link="/auth/dashboard"
           Icon={<i className="eva eva-home-outline" />}
           exact
         />

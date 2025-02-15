@@ -2,6 +2,7 @@ import React from "react";
 import { Breadcrumb, BreadcrumbItem } from "reactstrap";
 import { v4 as uuidv4 } from "uuid";
 import { Link } from "react-router-dom";
+import { routesDictionary } from "@/constants/routesDictionary";
 
 interface BreadcrumbsProps {
   url: string;
@@ -37,7 +38,8 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ url }) => {
 
   const getBreadcrumbsTitle = () => {
     const routeArray = url.split("/")
-    const title = routeArray[routeArray.length - 1]
+    const route = routeArray[routeArray.length - 1]
+    const title = routesDictionary[route]
     return title[0].toUpperCase() + title.slice(1)
   }
 

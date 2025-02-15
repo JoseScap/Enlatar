@@ -21,8 +21,8 @@ const Layout = () => {
         <main className={s.content}>
           <Breadcrumbs url={location.pathname} />
           <Routes>
-            <Route path="/" element={<Navigate to="/auth/panel" replace />} />
-            <Route path="/panel" element={<>Hola desde el panel</>} />
+            <Route path="/" element={<Navigate to="/auth/dashboard" replace />} />
+            <Route path="/dashboard" element={<>Hola desde el dashboard</>} />
             <Route path="/profile" element={<>Hola desde el perfil</>} />
           </Routes>
         </main>

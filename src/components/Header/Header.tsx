@@ -25,7 +25,7 @@ import {
 } from "@/components";
 import { useHeader } from "@/hooks/components/useHeader";
 
-import logoutIcon from "@/assets/navbarMenus/pfofileIcons/logoutOutlined.svg";
+import logoutIcon from "@/assets/navbarMenus/profileIcons/logoutOutlined.svg";
 import basketIcon from "@/assets/navbarMenus/basketIcon.svg";
 import calendarIcon from "@/assets/navbarMenus/calendarIcon.svg";
 import envelopeIcon from "@/assets/navbarMenus/envelopeIcon.svg";

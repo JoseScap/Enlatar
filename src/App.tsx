@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./styles/app.scss";
 import { Register, Login } from "@/pages";
+import { Layout } from "@/layouts";
 
 const App = () => {
   return (
@@ -10,9 +11,9 @@ const App = () => {
       <ToastContainer/>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Register />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Layout />} />
         </Routes>
       </BrowserRouter>
     </div>

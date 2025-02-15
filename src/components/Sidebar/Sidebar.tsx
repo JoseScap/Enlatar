@@ -48,6 +48,13 @@ const Sidebar: React.FC<SidebarProps> = (props) => {
           Icon={<i className="eva eva-person-outline" />}
           exact
         />
+        <Links
+          header='Alerts'
+          isHeader
+          link="/auth/ui-elements/alerts"
+          Icon={<i className="eva eva-bell-outline" />}
+          exact
+        />
       </ul>
     </nav>
   );

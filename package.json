@@ -1,0 +1,41 @@
+{
+  "name": "barbear",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.48.1",
+    "animate.css": "4.1.1",
+    "awesome-bootstrap-checkbox": "1.0.1",
+    "bootstrap": "4.6.0",
+    "eva-icons": "1.1.3",
+    "flatpickr": "^4.6.13",
+    "font-awesome": "4.7.0",
+    "line-awesome": "1.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.5",
+    "react-toastify": "^11.0.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@types/reactstrap": "8.7.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.19.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "globals": "^15.14.0",
+    "sass": "^1.85.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.22.0",
+    "vite": "^6.1.0"
+  }
+}

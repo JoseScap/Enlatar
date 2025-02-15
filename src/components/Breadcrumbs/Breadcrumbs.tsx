@@ -44,7 +44,7 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ url }) => {
   return (
     <div className="mb-4">
       <div className="headline-2">{getBreadcrumbsTitle()}
-        {getBreadcrumbsTitle() !== "Dashboard" &&
+        {getBreadcrumbsTitle() !== "Panel" &&
           <Breadcrumb tag="nav" listTag="div">
             {renderBreadcrumbs()}
           </Breadcrumb>

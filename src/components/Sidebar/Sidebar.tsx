@@ -34,9 +34,9 @@ const Sidebar: React.FC<SidebarProps> = (props) => {
       </header>
       <ul className={s.nav}>
         <Links
-          header='Inicio'
+          header='Panel'
           isHeader
-          link="/"
+          link="/auth/panel"
           Icon={<i className="eva eva-home-outline" />}
           exact
         />
@@ -44,7 +44,7 @@ const Sidebar: React.FC<SidebarProps> = (props) => {
         <Links
           header='Perfil'
           isHeader
-          link="/profile"
+          link="/auth/profile"
           Icon={<i className="eva eva-person-outline" />}
           exact
         />
